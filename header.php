@@ -1,9 +1,10 @@
 <?php
-/**
- * Theme: Wiki
- * Autor: Yannick Bach
- * Version: 0.2
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Header File, bildet den Kopf der Webseite und beinhaltet die Navigation
+Version:            0.1
+Author:             Yannick Bach
+*/
 
 ?>
 <!doctype html>
@@ -15,6 +16,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" /> <!-- Eigenes CSS -->
 		<?php wp_head(); ?>
 	</head>
+
 	<body <?php body_class(); ?>>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
@@ -22,20 +24,20 @@
 	<?php endif; ?>
 
 <header class="starter">
-<div class="container">
-	<div class="row main">
-		<div class="col-lg">
-			<?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();} ?> <!-- Funktion für ein eigens bestimmtes Logo -->
-		</div>
-	</div>
-	<div class="row main">
-		<div class="col-lg">
-			<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
-				<ul class="nav navbar-nav">
-			<?php foundationpress_top_bar_r(); ?> <!-- Menüstruktur von Wordpress -->
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div> <!-- Container -->
+	<div class="container">
+		<div class="row main">
+			<div class="col-lg">
+				<?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();} ?> <!-- Funktion für ein eigens bestimmtes Logo -->
+			</div>
+		</div> <!-- row -->
+		<div class="row main">
+			<div class="col-lg">
+				<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
+					<ul class="nav navbar-nav">
+				<?php foundationpress_top_bar_r(); ?> <!-- Menüstruktur von Wordpress -->
+					</ul>
+				</nav>
+			</div>
+		</div> <!-- row -->
+	</div> <!-- Container -->
 </header>

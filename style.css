@@ -1,19 +1,45 @@
 /*
 Theme Name:         Wiki
-Description:        CSS der Intronic AG zur gestaltung des Firmenwiki
-Version:            0.2
+Beschreibung:       CSS der Intronic AG zur gestaltung des Firmenwiki
+Version:            0.1
 Author:             Yannick Bach
 */
 @import url("css/bootstrap.min.css");
 
-.starter{
-  background-color: #ffed00;
-}
+/*---------------------------------     CSS für Bootstrap    ------------------------------*/
 
 .main{
   padding-top: 1rem;
 }
 
-ul{
-  text-decoration: none;
+/*---------------------------------     CSS für Bootstrap    ------------------------------*/
+
+/*---------------------------------     CSS des Headers    ---------------------------------*/
+.starter{
+  background-color: #ffed00;
 }
+
+/*---------------------------------     CSS der Navigation    ------------------------------*/
+
+.nav ul{
+  list-style: none;
+}
+
+.nav ul li{
+  float: left;
+}
+
+.nav ul li a{
+  color: white;
+}
+.menu-item{
+  padding-left: 2rem;
+}
+
+#menu-hauptmenu{
+  padding-left: 0px;
+}
+
+/*---------------------------------     CSS der Navigation    ------------------------------*/
+
+/*---------------------------------     CSS des Headers    ---------------------------------*/
