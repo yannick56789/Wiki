@@ -1,18 +1,26 @@
 <?php
 /**
- * Author: Ole Fredrik Lie
- * URL: http://olefredrik.com
- *
- * FoundationPress functions and definitions
- *
- * Set up the theme and provides some helper functions, which are used in the
- * theme as custom template tags. Others are attached to action and filter
- * hooks in WordPress to change core functionality.
- *
- * @link https://codex.wordpress.org/Theme_Development
- * @package FoundationPress
- * @since FoundationPress 1.0.0
+ * Theme: Wiki
+ * Autor: Yannick Bach
+ * Version: 0.2
  */
+ */
+
+ // Funktion zur Einfügung eines Eigenen Logos im Headerbereich //
+add_theme_support( 'custom-logo' );
+function themename_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+ 
 
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
