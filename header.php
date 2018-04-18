@@ -12,7 +12,7 @@ Author:             Yannick Bach
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="<?php bloginfo ('template_directory') ?>/favicon.ico" /> <!-- Einbettung des Favicon -->
+		<link rel="icon" href="<?php bloginfo('template_directory')?>/favicon.ico" /> <!-- Einbettung des Favicon -->
 		<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" /> <!-- Eigenes CSS -->
 		<?php wp_head(); ?>
 	</head>

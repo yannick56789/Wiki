@@ -4,6 +4,7 @@ Beschreibung:       CSS der Intronic AG zur gestaltung des Firmenwiki
 Version:            0.1
 Author:             Yannick Bach
 */
+
 @import url("css/bootstrap.min.css");
 
 /*---------------------------------     CSS für Bootstrap    ------------------------------*/
@@ -31,6 +32,11 @@ Author:             Yannick Bach
 
 .nav ul li a{
   color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover{
+  color: #d0d0d0;
 }
 .menu-item{
   padding-left: 2rem;
