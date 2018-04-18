@@ -4,23 +4,19 @@
  * Autor: Yannick Bach
  * Version: 0.2
  */
- */
 
  // Funktion zur Einfügung eines Eigenen Logos im Headerbereich //
 add_theme_support( 'custom-logo' );
 function themename_custom_logo_setup() {
     $defaults = array(
         'height'      => 100,
-        'width'       => 400,
-        'flex-height' => true,
-        'flex-width'  => true,
-        'header-text' => array( 'site-title', 'site-description' ),
+        'width'       => 200,
     );
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
- 
+
 
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
