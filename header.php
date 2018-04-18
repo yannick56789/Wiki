@@ -26,7 +26,7 @@
 <div class="container">
 	<div class="row main">
 		<div class="col-lg">
-			<img src="<?php bloginfo('template_directory')?>/img/introniclogo.JPG" width="200px">
+			<?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();} ?>
 		</div>
 	</div>
 	<div class="row main">
