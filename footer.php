@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Footer File, bildet den Schluss jeder einzelnen Seite.
-Version:            0.1
+Version:            0.3
 Author:             Yannick Bach
 */
 

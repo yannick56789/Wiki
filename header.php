@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Header File, bildet den Kopf der Webseite und beinhaltet die Navigation
-Version:            0.1
+Version:            0.2
 Author:             Yannick Bach
 */
 
