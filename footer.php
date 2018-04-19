@@ -44,17 +44,18 @@ Author:             Yannick Bach
           <?php dynamic_sidebar( 'footer_widget_ganz_rechts' ); ?>
         </div>
       </div>
-      <div class="row">
+    </div>
+  </div>
+  <div class="footerthird">
+    <div class="container">
+      <div class="row main">
         <div class="col-lg">
+          <p>Intronic AG &copy; <?php echo date("Y"); ?></p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-
-<?php //dynamic_sidebar( 'footer-widgets' ); ?>
-
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	</div><!-- Close off-canvas content -->

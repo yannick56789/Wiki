@@ -68,6 +68,11 @@ ul{
 
 .footerfirst{
   background-color: #ffed00;
+  padding-bottom: 2rem;
+}
+
+.footerfirst p{
+  color: #262626;
 }
 
 .footerfirst .col-md-4{
@@ -80,10 +85,19 @@ i{
 
 .footersecond{
   background-color: #262626;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
-.footersecond h5{
+.footersecond b, p{
   color: white;
 }
 
+.footerthird{
+  background-color: black;
+}
+
+.footerthird p{
+  color: #d0d0d0
+}
 /*---------------------------------     CSS des Footers    ---------------------------------*/
