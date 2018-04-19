@@ -26,8 +26,8 @@ function footer_widget_ganz_links() {
 		'name'          => 'Footer Widget, ganz links',
 		'id'            => 'footer_widget_ganz_links',
     'description'   => 'Hier können Sie das Widget im Footer ganz links bestimmen.',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>',
+    'before_title'  => '<b>',
+    'after_title'   => '</b>',
 	) );
 
 }
@@ -41,8 +41,8 @@ function footer_widget_mitte_links() {
 		'name'          => 'Footer Widget, mitte links',
 		'id'            => 'footer_widget_mitte_links',
     'description'   => 'Hier können Sie das Widget im Footer mitte links bestimmen.',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>',
+    'before_title'  => '<b>',
+    'after_title'   => '</b>',
 	) );
 
 }
@@ -56,8 +56,8 @@ function footer_widget_mitte_rechts() {
 		'name'          => 'Footer Widget, mitte rechts',
 		'id'            => 'footer_widget_mitte_rechts',
     'description'   => 'Hier können Sie das Widget im Footer mitte rechts bestimmen.',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>',
+    'before_title'  => '<b>',
+    'after_title'   => '</b>',
 	) );
 
 }
@@ -71,8 +71,8 @@ function footer_widget_ganz_rechts() {
 		'name'          => 'Footer Widget, ganz rechts',
 		'id'            => 'footer_widget_ganz_rechts',
     'description'   => 'Hier können Sie das Widget im Footer ganz rechts bestimmen.',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>',
+    'before_title'  => '<b>',
+    'after_title'   => '</b>',
 	) );
 
 }
