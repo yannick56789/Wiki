@@ -7,6 +7,18 @@ Author:             Yannick Bach
 
 @import url("css/bootstrap.min.css");
 
+body p{
+  color: #262626;
+}
+
+a{
+  color:;
+}
+
+h2{
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 /*---------------------------------     CSS für Auflistungen    --------------------------*/
 
@@ -28,10 +40,14 @@ ul{
 
 /*---------------------------------     CSS für Bootstrap    ------------------------------*/
 
+
 /*---------------------------------     CSS des Headers    ---------------------------------*/
 .starter{
   background-color: #ffed00;
 }
+
+/*---------------------------------     CSS des Headers    ---------------------------------*/
+
 
 /*---------------------------------     CSS der Navigation    ------------------------------*/
 
@@ -59,9 +75,15 @@ ul{
   padding-left: 0px;
 }
 
-/*---------------------------------     CSS der Navigation    ------------------------------*/
+.bg-dark{
+  background-color: #262626 !important;
+}
 
-/*---------------------------------     CSS des Headers    ---------------------------------*/
+#menu-item-23{
+  padding-left: 0px !important;
+
+}
+/*---------------------------------     CSS der Navigation    ------------------------------*/
 
 
 /*---------------------------------     CSS des Footers    ---------------------------------*/
@@ -89,7 +111,7 @@ i{
   padding-bottom: 1rem;
 }
 
-.footersecond b, p{
+footer b{
   color: white;
 }
 
@@ -100,4 +122,30 @@ i{
 .footerthird p{
   color: #d0d0d0
 }
+
+footer .widget_archive a,
+footer .widget_meta a,
+footer .widget_text p{
+  color: #d0d0d0;
+}
 /*---------------------------------     CSS des Footers    ---------------------------------*/
+
+
+/*---------------------------------     CSS des Index      ---------------------------------*/
+
+article{
+  background-color: #e9ecef;
+  padding: 1rem;
+}
+
+.startseite{
+  padding: 5rem 2rem;
+  background-color: #e9ecef;
+}
+.titel{
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/*---------------------------------     CSS des Index      ---------------------------------*/

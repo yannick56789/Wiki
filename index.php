@@ -1,49 +1,55 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Das Index File bildet die Startseite der Homepage.
+Version:            0.3
+Author:             Yannick Bach
+*/
 
 get_header(); ?>
 
-<div class="main-grid">
-	<main class="main-content">
-	<?php if ( have_posts() ) : ?>
+<div class="startseite">
+	<div class="container">
+		<h1 class="titel">Intronic AG, Unternehemens Wiki</h1>
+		<p>Dies ist das offizielle Unternehemens Wiki der Firma Intronic AG. Hier finden Sie Anleitungen und Beiträge die Ihnen bei ihrem täglichem Arbeitsablauf helfen können.
+		Wurde eine Frage noch nicht beantwortet? <a href="">Sie können einen eigenen Beitrag erstellen</a>. Oder wenden Sie sich an das <a href="http://10.100.146.11/wiki/forums/forum/forum/">Forum.</a></p>
+		<p><?php get_search_form(); ?></p>
+	</div>
+</div>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
+<div class="container">
+	<div class="row main">
+		<div class="col-md-8">
+			<?php if ( have_posts() ) : ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php // Den Loop beginnen // ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+				<?php endwhile; ?>
 
-		<?php endif; // End have_posts() check. ?>
+				<?php else : ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php /* Display navigation to next/previous pages when applicable */ ?>
-		<?php
-		if ( function_exists( 'foundationpress_pagination' ) ) :
-			foundationpress_pagination();
-		elseif ( is_paged() ) :
-		?>
+				<?php endif; // Ende der Loop kontrolle // ?>
+
+				<?php /* Display navigation to next/previous pages when applicable */ ?>
+				<?php
+				if ( function_exists( 'foundationpress_pagination' ) ) :
+					foundationpress_pagination();
+				elseif ( is_paged() ) :
+				?>
 			<nav id="post-nav">
 				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
 				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
 
-	</main>
-	<?php get_sidebar(); ?>
-
+		</div>
+		<div class="col-md-4">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 </div>
+
 
 <?php get_footer();
