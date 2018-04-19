@@ -1,10 +1,38 @@
 <?php
-/**
-* Theme: Wiki
-* Autor: Yannick Bach
-* Version: 0.2
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Footer File, bildet den Schluss jeder einzelnen Seite.
+Version:            0.1
+Author:             Yannick Bach
+*/
+
 ?>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg">
+      </div>
+    </div>
+  </div>
+</footer>
 
 <footer class="footer">
     <div class="footer-container">
