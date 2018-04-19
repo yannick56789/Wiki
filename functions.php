@@ -1,9 +1,10 @@
 <?php
-/**
- * Theme: Wiki
- * Autor: Yannick Bach
- * Version: 0.2
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Hier werden alle Funktionen des Themes aufgeführt
+Version:            0.1
+Author:             Yannick Bach
+*/
 
  // Funktion zur Einfügung eines Eigenen Logos im Headerbereich //
 add_theme_support( 'custom-logo' );
@@ -15,6 +16,69 @@ function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+// Funktion zur Integration von Widgets im Footer //
+
+// Ganz Links //
+function footer_widget_ganz_links() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Widget, ganz links',
+		'id'            => 'footer_widget_ganz_links',
+    'description'   => 'Hier können Sie das Widget im Footer ganz links bestimmen.',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widget_ganz_links' );
+
+// Mitte Links //
+
+function footer_widget_mitte_links() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Widget, mitte links',
+		'id'            => 'footer_widget_mitte_links',
+    'description'   => 'Hier können Sie das Widget im Footer mitte links bestimmen.',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widget_mitte_links' );
+
+// Mitte Rechts //
+
+function footer_widget_mitte_rechts() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Widget, mitte rechts',
+		'id'            => 'footer_widget_mitte_rechts',
+    'description'   => 'Hier können Sie das Widget im Footer mitte rechts bestimmen.',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widget_mitte_rechts' );
+
+// Ganz Rechts //
+
+function footer_widget_ganz_rechts() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Widget, ganz rechts',
+		'id'            => 'footer_widget_ganz_rechts',
+    'description'   => 'Hier können Sie das Widget im Footer ganz rechts bestimmen.',
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widget_ganz_rechts' );
+
+
 
 
 

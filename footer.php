@@ -8,27 +8,45 @@ Author:             Yannick Bach
 
 ?>
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
+  <div class="footerfirst">
+    <div class="container">
+      <div class="row main">
+        <div class="col-md-4">
+          <i class="fas fa-home fa-4x"></i>
+          <p>Sie befinden sich auf dem Unternehmenswiki der Intronic AG. Hier finden Sie Anleitungen und Beiträge zum Firmenablauf.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-archive fa-4x"></i>
+          <p>Auf dieser Seite befindet sich ein Archiv aus Anleitungen die sie für den Berufsalltag der Intronic AG benutzen können.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-address-book fa-4x"></i>
+          <p>Roger Wetzel: (+) 41 52 644 00 99 <br>
+             Ralph Morgenthaler: (+) 41 52 644 00 83 <br>
+             Intronic Lager: (+) 41 52 644 00 81 </p>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-3">
+  </div>
+  <div class="footersecond">
+    <div class="container">
+      <div class="row main">
+        <div class="col-md-3">
+          <?php dynamic_sidebar( 'footer_widget_ganz_links' ); ?>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar( 'footer_widget_mitte_links' ); ?>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar( 'footer_widget_mitte_rechts' ); ?>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar( 'footer_widget_ganz_rechts' ); ?>
+        </div>
       </div>
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg">
+      <div class="row">
+        <div class="col-lg">
+        </div>
       </div>
     </div>
   </div>

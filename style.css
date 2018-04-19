@@ -7,6 +7,19 @@ Author:             Yannick Bach
 
 @import url("css/bootstrap.min.css");
 
+
+/*---------------------------------     CSS für Auflistungen    --------------------------*/
+
+li{
+  list-style-type: none;
+}
+
+ul{
+  -webkit-padding-start: 0px;
+}
+
+/*---------------------------------     CSS für Auflistungen    --------------------------*/
+
 /*---------------------------------     CSS für Bootstrap    ------------------------------*/
 
 .main{
@@ -53,6 +66,24 @@ Author:             Yannick Bach
 
 /*---------------------------------     CSS des Footers    ---------------------------------*/
 
+.footerfirst{
+  background-color: #ffed00;
+}
 
+.footerfirst .col-md-4{
+  text-align: center;
+}
+
+i{
+  padding: 1.5rem;
+}
+
+.footersecond{
+  background-color: #262626;
+}
+
+.footersecond h5{
+  color: white;
+}
 
 /*---------------------------------     CSS des Footers    ---------------------------------*/
