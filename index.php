@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div class="startseite">
 	<div class="container">
-		<h1 class="titel">Intronic AG, Unternehemens Wiki</h1>
+		<h1 class="titel">Intronic AG - Unternehemens Wiki</h1>
 		<p>Dies ist das offizielle Unternehemens Wiki der Firma Intronic AG. Hier finden Sie Anleitungen und Beiträge die Ihnen bei ihrem täglichem Arbeitsablauf helfen können.
 		Wurde eine Frage noch nicht beantwortet? <a href="">Sie können einen eigenen Beitrag erstellen</a>. Oder wenden Sie sich an das <a href="http://10.100.146.11/wiki/forums/forum/forum/">Forum.</a></p>
 		<p><?php get_search_form(); ?></p>
@@ -31,20 +31,8 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				<?php endif; // Ende der Loop kontrolle // ?>
-
-				<?php /* Display navigation to next/previous pages when applicable */ ?>
-				<?php
-				if ( function_exists( 'foundationpress_pagination' ) ) :
-					foundationpress_pagination();
-				elseif ( is_paged() ) :
-				?>
-			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-			</nav>
-		<?php endif; ?>
-
 		</div>
+
 		<div class="col-md-4">
 			<?php get_sidebar(); ?>
 		</div>
