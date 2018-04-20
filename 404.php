@@ -1,28 +1,30 @@
 <?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Das standart File für Fehlermeldugnen
+Version:            0.4
+Author:             Yannick Bach
+*/
 
 get_header(); ?>
 
-<div class="main-container">
-	<div class="main-grid">
-		<main class="content">
+<div class="container">
+	<div class="row main">
+		<div class="col-md-8">
 			<article>
-				<header>
-					<h1 class="entry-title"><?php _e( 'File Not Found', 'foundationpress' ); ?></h1>
+				<header class="fiernullfier">
+					<i class="fas fa-exclamation-triangle fa-9x"></i>
+					<h1 class="entry-title"><?php _e( 'Seite konnte leider nicht gefunden werden.', 'foundationpress' ); ?></h1>
 				</header>
 				<div class="entry-content">
 					<div class="error">
-						<p class="bottom"><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'foundationpress' ); ?></p>
+						<p class="bottom"><?php _e( 'Die Seite, die Sie suchen, wurde möglicherweise entfernt oder umbennant, oder ist vorübergehend nicht verfügbar.', 'foundationpress' ); ?></p>
 					</div>
-					<p><?php _e( 'Please try the following:', 'foundationpress' ); ?></p>
+					<p><?php _e( 'Vielleicht hilft eine Suche', 'foundationpress' ); ?></p>
+					<p><?php get_search_form(); ?></p>
 					<ul>
 						<li>
-							<?php _e( 'Check your spelling', 'foundationpress' ); ?>
+							<?php _e( 'Überprüfen Sie ihre Eingabe auf Rechtschreibefehler', 'foundationpress' ); ?>
 						</li>
 						<li>
 							<?php
@@ -39,8 +41,10 @@ get_header(); ?>
 					</ul>
 				</div>
 			</article>
-		</main>
-		<?php get_sidebar(); ?>
+		</div>
+		<div class="col-md-4">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
 </div>
 <?php get_footer();

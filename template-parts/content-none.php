@@ -1,20 +1,21 @@
 <?php
-/**
- * The template part for displaying a message that posts cannot be found
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Conten-none ist ein template File für Fehlermeldungen
+Version:            0.4
+Author:             Yannick Bach
+*/
 
 ?>
 
-<header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'foundationpress' ); ?></h1>
+<div class="nichtsgefunden">
+<header class="page-header nichts">
+
+	<i class="fas fa-exclamation-triangle fa-9x"></i>
+	<h1 class="page-title"><?php _e( 'Oops! Nichts gefunden', 'foundationpress' ); ?></h1>
 </header>
 
-<div class="page-content">
+<div class="page-content nichts">
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 	<p>
@@ -34,8 +35,8 @@
 
 	<?php else : ?>
 
-	<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'foundationpress' ); ?></p>
+	<p><?php _e( 'Leider konnte die von Ihnen Angefragte Seite nicht gefunden werden. Vielleicht hilft ihnen eine Suche weiter.', 'foundationpress' ); ?></p>
 	<?php get_search_form(); ?>
-
 	<?php endif; ?>
+</div>
 </div>

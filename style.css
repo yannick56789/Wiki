@@ -177,6 +177,7 @@ article{
 
 .btn{
   text-align: left;
+  border-radius: 0px !important;
 }
 
 /*---------------------------------     CSS der Sidebar     ---------------------------------*/
@@ -211,3 +212,41 @@ textarea{
 }
 
 /*---------------------------------     CSS des Forums       ---------------------------------*/
+
+
+/*---------------------------------     CSS des Archiv       ---------------------------------*/
+
+.kategorietitel{
+  background-color: #e9ecef;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nichts{
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nichtsgefunden{
+  background-color: #e9ecef;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-content .input-group{
+  padding-left: 14rem;
+}
+
+.nichts i{
+  padding: 1rem;
+}
+
+.fiernullfier{
+  text-align: center;
+}
+
+.fiernullfier h1{
+  padding-top: 1rem;
+}
+/*---------------------------------     CSS des Archiv       ---------------------------------*/
