@@ -1,12 +1,10 @@
 <?php
-/**
- * The default template for displaying content
- *
- * Used for both single and index/archive/search.
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Das Single File zeigt einen einzelnen Beitrag an
+Version:            0.4
+Author:             FoundationPress
+*/
 
 ?>
 

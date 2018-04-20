@@ -95,7 +95,7 @@ if ( comments_open() ) :
 			<?php
 				/* translators: %1$s: site url, %2$s: user identity  */
 				printf(
-					__( 'Logged in as <a href="%1$s/wp-admin/profile.php">%2$s</a>.', 'foundationpress' ),
+					__( 'Angemeldet als <a href="%1$s/wp-admin/profile.php">%2$s</a>.', 'foundationpress' ),
 					get_option( 'siteurl' ),
 					$user_identity
 				);
@@ -134,20 +134,7 @@ if ( comments_open() ) :
 		</p>
 		<?php endif; ?>
 		<p>
-			<label for="comment">
-					<?php
-						_e( 'Comment', 'foundationpress' );
-					?>
-			</label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
-		</p>
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong>
-			<?php
-				_e( 'You can use these tags:', 'foundationpress' );
-			?>
-			<code>
-				<?php echo allowed_tags(); ?>
-			</code>
 		</p>
 		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e( 'Submit Comment', 'foundationpress' ); ?>"></p>
 		<?php comment_id_fields(); ?>
