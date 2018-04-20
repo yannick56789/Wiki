@@ -18,6 +18,15 @@ a{
 h2{
   font-weight: 300;
   line-height: 1.2;
+  color: #262626;
+}
+
+h2 a{
+  color: #262626;
+}
+
+article, aside{
+  margin-bottom: 1rem;
 }
 
 /*---------------------------------     CSS für Auflistungen    --------------------------*/
@@ -101,8 +110,8 @@ ul{
   text-align: center;
 }
 
-i{
-  padding: 1.5rem;
+footer i{
+  padding: 2rem;
 }
 
 .footersecond{
@@ -149,3 +158,25 @@ article{
 }
 
 /*---------------------------------     CSS des Index      ---------------------------------*/
+
+
+/*---------------------------------     CSS der Sidebar     ---------------------------------*/
+
+.card{
+  border: 1px solid #d0d0d0;
+  background-color: #e9ecef;
+}
+
+.unique{
+  background-color: #e9ecef;
+  border: 1px solid #d0d0d0;
+  margin-top: 0.5rem;
+}
+
+
+
+.btn{
+  text-align: left;
+}
+
+/*---------------------------------     CSS der Sidebar     ---------------------------------*/
