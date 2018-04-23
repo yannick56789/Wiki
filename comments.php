@@ -7,6 +7,8 @@
  *
  * @package FoundationPress
  * @since FoundationPress 1.0.0
+
+ * Anpassungen durch: Yannick Bach am 23.04.2018 (siehe Kommentare)
  */
 
 if ( have_comments() ) :
@@ -68,22 +70,22 @@ if ( comments_open() ) :
 	if ( ( is_page() || is_single() ) && ( ! is_home() && ! is_front_page() ) ) :
 ?>
 <section id="respond">
-	<h3>
+	<h2>
 		<?php
 			comment_form_title(
-				__( 'Leave a Reply', 'foundationpress' ),
+				__( 'Den Beitrag Kommentieren', 'foundationpress' ), //-------------------- Den Titel angepasst -------------//
 				/* translators: %s: author of comment being replied to */
 				__( 'Leave a Reply to %s', 'foundationpress' )
 			);
 		?>
-	</h3>
+	</h2>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) : ?>
 	<p>
 		<?php
 			/* translators: %s: login url */
 			printf(
-				__( 'You must be <a href="%s">logged in</a> to post a comment.', 'foundationpress' ),
+				__( 'Sie müssen <a href="%s">angemeldet</a> sein, um einen Kommentar abzugeben.', 'foundationpress' ),
 				wp_login_url( get_permalink() )
 			);
 		?>
@@ -95,7 +97,7 @@ if ( comments_open() ) :
 			<?php
 				/* translators: %1$s: site url, %2$s: user identity  */
 				printf(
-					__( 'Angemeldet als <a href="%1$s/wp-admin/profile.php">%2$s</a>.', 'foundationpress' ),
+					__( '<i class="fas fa-user"></i>&nbsp;&nbsp;<b><a style="color:#262626;" href="%1$s/wp-admin/profile.php">%2$s</a></b>', 'foundationpress' ), //-------------------- Benutzeranzeige angepasst -----------------------//
 					get_option( 'siteurl' ),
 					$user_identity
 				);

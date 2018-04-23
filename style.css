@@ -176,6 +176,7 @@ article{
 .card-header{
   background-color: #e9ecef;
   border-bottom: none;
+  padding: 0.75rem 0rem;
 }
 
 .card{
@@ -280,7 +281,16 @@ textarea{
 }
 
 .breadcrumb a{
+  color: darkgrey;
+  padding: 0rem 0.25rem;
+}
+
+.breadcrumb a:hover{
   color: white;
+}
+
+.breadcrumb .current-page{
+  padding-left: 0.25rem;
 }
 
 
@@ -315,3 +325,21 @@ textarea{
 }
 
 /*---------------------------------     CSS Suchfunktion     ---------------------------------*/
+
+/*---------------------------------     CSS Kommentarfunktion   ------------------------------*/
+
+#respond{
+  padding: 1rem;
+  background-color: #e9edef;
+  margin-bottom: 1rem;
+}
+
+#comments h3{
+  font-weight: 300;
+  line-height: 1.2;
+  color: #262626;
+  font-size: 2rem;
+}
+
+
+/*---------------------------------     CSS Kommentarfunktion   ------------------------------*/
