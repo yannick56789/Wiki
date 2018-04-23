@@ -1,7 +1,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       CSS der Intronic AG zur gestaltung des Firmenwiki
-Version:            0.3
+Version:            0.5
 Author:             Yannick Bach
 */
 
@@ -173,11 +173,12 @@ article{
   margin-top: 0.5rem;
 }
 
-
+.card{
+  border-radius: 0rem;
+}
 
 .btn{
   text-align: left;
-  border-radius: 0px !important;
 }
 
 /*---------------------------------     CSS der Sidebar     ---------------------------------*/
@@ -217,10 +218,22 @@ textarea{
 /*---------------------------------     CSS des Archiv       ---------------------------------*/
 
 .kategorietitel{
-  background-color: #e9ecef;
+  background-color: #757575;
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
+.kategorietitel h2{
+  color: white;
+}
+
+.kategorietitel p{
+  color:  #e9ecef;
+}
+
+/*---------------------------------     CSS des Archiv       ---------------------------------*/
+
+/*---------------------------------     CSS des 404 Files    ---------------------------------*/
 
 .nichts{
   text-align: center;
@@ -244,9 +257,28 @@ textarea{
 
 .fiernullfier{
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .fiernullfier h1{
   padding-top: 1rem;
 }
-/*---------------------------------     CSS des Archiv       ---------------------------------*/
+
+/*---------------------------------     CSS des 404 Files    ---------------------------------*/
+
+/*---------------------------------     CSS der Breadcrumb Navigation     --------------------*/
+
+.breadcrumb{
+  margin-bottom: 0rem;
+  background-color: #616161;
+  border-radius: 0rem;
+  color: white;
+}
+
+.breadcrumb a{
+  color: white;
+}
+
+
+/*---------------------------------     CSS der Breadcrumb Navigation     --------------------*/
