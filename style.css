@@ -255,14 +255,12 @@ textarea{
   padding: 1rem;
 }
 
-.fiernullfier{
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.errortitel{
+  font-size: 8rem;
 }
 
-.fiernullfier h1{
-  padding-top: 1rem;
+.notfound{
+  margin: 3rem 0rem;
 }
 
 /*---------------------------------     CSS des 404 Files    ---------------------------------*/
