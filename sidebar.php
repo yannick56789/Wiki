@@ -26,7 +26,7 @@ Author:             Yannick Bach
 		  </div>
 		</div>
 		<div class="card-body unique">
-			<i class="fas fa-user"></i> &nbsp; Angemeldet als: <b>
+			<i class="fas fa-user"></i> &nbsp; <b>
 			<?php if ( is_user_logged_in() ) { $current_user = wp_get_current_user(); echo '' . $current_user->user_login . '';
     		} else {
         echo( 'Nicht Angemeldet' );
