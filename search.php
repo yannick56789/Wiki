@@ -1,46 +1,40 @@
 <?php
-/**
- * The template for displaying search results pages.
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Dieses File zeigt die Suchergebnise bei einer Suche an.
+Version:            0.5
+Author:             Yannick Bach
+*/
 
 get_header(); ?>
 
-<div class="main-container">
-	<div class="main-grid">
-		<main id="search-results" class="main-content">
+<div class="container">
+	<div class="row main">
+		<div class="col-md-8">
+			<main id="search-results" class="main-content">
+				<div class="Suchergebnisse">
+					<h2><?php _e( '<i class="fas fa-search fa-1x"></i> Ergebnisse für', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h2>
+				</div>
+				<div class="weiteresuche">
+					<?php echo ('<p>Nicht gefunden was Sie suchen? Überprüfen Sie ihre Eingaben. </p>'); ?>
+					<?php get_search_form(); ?>
+				</div>
 
-		<header>
-			<h1 class="entry-title"><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
-		</header>
+				<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-			<?php else : ?>
+				<?php else : ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
-
-		<?php
-		if ( function_exists( 'foundationpress_pagination' ) ) :
-			foundationpress_pagination();
-		elseif ( is_paged() ) :
-		?>
-			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-			</nav>
-		<?php endif; ?>
-
-		</main>
-	<?php get_sidebar(); ?>
-
+				<?php endif; ?>
+			</main>
+		</div>
+		<div class="col-md-4">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
 </div>
 <?php get_footer();

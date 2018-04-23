@@ -173,6 +173,11 @@ article{
   margin-top: 0.5rem;
 }
 
+.card-header{
+  background-color: #e9ecef;
+  border-bottom: none;
+}
+
 .card{
   border-radius: 0rem;
 }
@@ -280,3 +285,33 @@ textarea{
 
 
 /*---------------------------------     CSS der Breadcrumb Navigation     --------------------*/
+
+/*---------------------------------     CSS Suchfunktion     ---------------------------------*/
+
+.Suchergebnisse{
+  margin-bottom: 0rem;
+  background-color: #616161;
+  border-radius: 0rem;
+  padding: 1rem;
+}
+
+.Suchergebnisse i{
+  color: darkgrey;
+}
+
+.Suchergebnisse h2{
+  color: white;
+}
+
+.weiteresuche{
+  background-color: #757575;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.weiteresuche p{
+  color: white;
+}
+
+/*---------------------------------     CSS Suchfunktion     ---------------------------------*/
