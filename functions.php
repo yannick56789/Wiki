@@ -91,7 +91,7 @@ function nav_breadcrumb() {
 
  if ( !is_home() && !is_front_page() || is_paged() ) {
 
- echo '<nav class="breadcrumb">Sie sind hier: &nbsp; ';
+ echo '<nav class="breadcrumb">Sie sind hier:';
 
  global $post;
  $homeLink = get_bloginfo('url');

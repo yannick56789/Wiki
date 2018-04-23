@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name:         Wiki
-Beschreibung:       Conten-none ist ein template File für Fehlermeldungen
+Beschreibung:       Conten-none ist ein template File für nicht vorhandene Beiträge
 Version:            0.4
 Author:             Yannick Bach
 */
