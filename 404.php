@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Das standart File für Fehlermeldugnen
-Version:            0.4
+Version:            0.5
 Author:             Yannick Bach
 */
 
@@ -12,15 +12,14 @@ get_header(); ?>
 	<div class="row main">
 		<div class="col-md-8">
 			<article>
-				<header class="fiernullfier">
+				<div class="fiernullfier">
 					<i class="fas fa-exclamation-triangle fa-9x"></i>
-					<h1 class="entry-title"><?php _e( 'Seite konnte leider nicht gefunden werden.', 'foundationpress' ); ?></h1>
-				</header>
+					<h1 class="entry-title"><p>Seite konnte leider nicht gefunden werden.</p></h1>
+				</div>
 				<div class="entry-content">
 					<div class="error">
-						<p class="bottom"><?php _e( 'Die Seite, die Sie suchen, wurde möglicherweise entfernt oder umbennant, oder ist vorübergehend nicht verfügbar.', 'foundationpress' ); ?></p>
+						<p class="bottom">Die Seite, die Sie suchen, wurde möglicherweise entfernt oder umbennant, oder ist vorübergehend nicht verfügbar. Vielleicht hilft eine Suche</p>
 					</div>
-					<p><?php _e( 'Vielleicht hilft eine Suche', 'foundationpress' ); ?></p>
 					<p><?php get_search_form(); ?></p>
 					<ul>
 						<li>
@@ -28,15 +27,14 @@ get_header(); ?>
 						</li>
 						<li>
 							<?php
-								/* translators: %s: home page url */
 								printf(
-									__( 'Return to the <a href="%s">home page</a>', 'foundationpress' ),
+									__( 'Zurück zur <a href="%s">Startseite</a>', 'foundationpress' ),
 									home_url()
 								);
 							?>
 						</li>
 						<li>
-							<?php _e( 'Click the <a href="javascript:history.back()">Back</a> button', 'foundationpress' ); ?>
+							<?php _e( 'Eine Seite <a href="javascript:history.back()">zurück</a>', 'foundationpress' ); ?>
 						</li>
 					</ul>
 				</div>
