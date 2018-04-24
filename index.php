@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div class="startseite">
 	<div class="container">
-		<h1 class="titel">Intronic AG - Unternehemens Wiki</h1>
+		<h1 class="titelstart">Intronic AG - Unternehemens Wiki</h1>
 		<p>Dies ist das offizielle Unternehemens Wiki der Firma Intronic AG. Hier finden Sie Anleitungen und Beiträge die Ihnen bei ihrem täglichem Arbeitsablauf helfen können.
 		Wurde eine Frage noch nicht beantwortet? <a href="">Sie können einen eigenen Beitrag erstellen</a>. Oder wenden Sie sich an das <a href="http://10.100.146.11/wiki/forums/forum/forum/">Forum.</a></p>
 		<p><?php get_search_form(); ?></p>
@@ -24,7 +24,7 @@ get_header(); ?>
 
 				<?php // Den Loop beginnen // ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+					<?php get_template_part( 'template-parts/content-page', get_post_format() ); ?>
 				<?php endwhile; ?>
 
 				<?php else : ?>
