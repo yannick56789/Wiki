@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Conten-none ist ein template File für nicht vorhandene Beiträge
-Version:            0.4
+Version:            0.6
 Author:             Yannick Bach
 */
 
@@ -30,7 +30,7 @@ Author:             Yannick Bach
 
 	<?php elseif ( is_search() ) : ?>
 
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'foundationpress' ); ?></p>
+	<p><?php _e( 'Leider konnte die von Ihnen Angefragte Seite nicht gefunden werden. Vielleicht hilft ihnen eine Suche weiter.', 'foundationpress' ); ?></p>
 	<?php get_search_form(); ?>
 
 	<?php else : ?>

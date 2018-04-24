@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Das Single File zeigt einen einzelnen Beitrag an
-Version:            0.4
+Version:            0.6
 Author:             FoundationPress
 */
 

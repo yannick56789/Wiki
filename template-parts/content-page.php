@@ -1,11 +1,10 @@
 <?php
-/**
- * The default template for displaying page content
- *
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+/*
+Theme Name:         Wiki
+Beschreibung:       Content-Page ist ein bestandteil des Post Loops und gibt einzelne Seiten aus
+Version:            0.6
+Author:             FoundationPress
+*/
 
 ?>
 

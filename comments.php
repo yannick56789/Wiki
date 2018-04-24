@@ -8,7 +8,7 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
 
- * Anpassungen durch: Yannick Bach am 23.04.2018 (siehe Kommentare)
+ * -------------------------------------    Anpassungen durch: Yannick Bach am 23.04.2018 (siehe Kommentare)          -----------//
  */
 
 if ( have_comments() ) :
@@ -73,7 +73,7 @@ if ( comments_open() ) :
 	<h2>
 		<?php
 			comment_form_title(
-				__( 'Den Beitrag Kommentieren', 'foundationpress' ), //-------------------- Den Titel angepasst -------------//
+				__( 'Den Beitrag Kommentieren', 'foundationpress' ), //-------------------------------------------------------------------- Den Titel angepasst -------------//
 				/* translators: %s: author of comment being replied to */
 				__( 'Leave a Reply to %s', 'foundationpress' )
 			);
@@ -97,7 +97,7 @@ if ( comments_open() ) :
 			<?php
 				/* translators: %1$s: site url, %2$s: user identity  */
 				printf(
-					__( '<i class="fas fa-user"></i>&nbsp;&nbsp;<b><a style="color:#262626;" href="%1$s/wp-admin/profile.php">%2$s</a></b>', 'foundationpress' ), //-------------------- Benutzeranzeige angepasst -----------------------//
+					__( '<i class="fas fa-user"></i>&nbsp;&nbsp;<b><a style="color:#262626;" href="%1$s/wp-admin/profile.php">%2$s</a></b>', 'foundationpress' ), //---------------------------- Benutzeranzeige angepasst -----------------------//
 					get_option( 'siteurl' ),
 					$user_identity
 				);

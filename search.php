@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Dieses File zeigt die Suchergebnise bei einer Suche an.
-Version:            0.5
+Version:            0.6
 Author:             Yannick Bach
 */
 
