@@ -14,7 +14,7 @@ Author:             Yannick Bach
 				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 		    	<div class="card-header" id="headingOne">
 		      	<h2 class="mb-0">
-		          Anmelden
+		          Anmelden <i class="far fa-caret-square-down mehranmelden"></i>
 		      	</h2>
 		    	</div>
 				</button>
@@ -34,8 +34,8 @@ Author:             Yannick Bach
 			?> </b>
 			<br>
 			<span class="nichtkorrekt">
-				<i>Nicht korrekt?</i> <?php wp_loginout(); ?> <!-- WordPress Ein-/Ausloggen Link -->
-			</span> <br>
+				<p>Nicht korrekt? <?php wp_loginout(); ?></p> <!-- WordPress Ein-/Ausloggen Link -->
+			</span>
 		</div>
 
 			<div class="card-body unique">

@@ -177,6 +177,7 @@ article{
   border: 1px solid #d0d0d0;
   background-color: #ffed00;
   border-radius: 0rem;
+  text-decoration: none;
 }
 
 .unique{
@@ -189,14 +190,24 @@ article{
   background-color: #ffed00;
   border-bottom: none;
   padding: 0.75rem 0rem;
+  text-decoration: none;
 }
 
 .card-body{
   background-color: #e9ecef;
+  text-decoration: none;
 }
 
 .btn{
   text-align: left;
+}
+
+.mehranmelden{
+  font-size: 1.35rem;
+}
+
+.login-password label{
+  padding-right: 6rem;
 }
 
 /*---------------------------------     CSS der Sidebar     ---------------------------------*/
@@ -223,14 +234,6 @@ textarea{
 }
 
 /*---------------------------------     CSS der Kommentare   ---------------------------------*/
-
-/*---------------------------------     CSS des Forums       ---------------------------------*/
-
-#bbpress-forums fieldset.bbp-form{
-  padding: 0px !important;
-}
-
-/*---------------------------------     CSS des Forums       ---------------------------------*/
 
 
 /*---------------------------------     CSS des Archiv       ---------------------------------*/
@@ -361,7 +364,15 @@ textarea{
 .subscription-toggle,
 .bbp-template-notice.info,
 .bbp-pagination,
-.bbp-template-notice{
+.bbp-template-notice,
+.bbp-topic-tags,
+.bbp-header,
+.bbp-author-role,
+.bbp-reply-ip,
+.bbp-admin-links,
+.bbp_topic_tags,
+.bbp-form p,
+.bbp-footer{
   display: none;
 }
 
@@ -373,6 +384,9 @@ textarea{
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
 }
 
+#bbpress-forums fieldset.bbp-form{
+  padding: 0px !important;
+}
 
 
 /*---------------------------------     CSS des Forums          ------------------------------*/
