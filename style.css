@@ -12,7 +12,7 @@ body p{
 }
 
 a{
-  color:;
+  color: #007bff;
 }
 
 h2{
@@ -23,6 +23,11 @@ h2{
 
 h2 a{
   color: #262626;
+  text-decoration: none !important;
+}
+
+h2 a:hover{
+  color: #007bff;
 }
 
 article, aside{
@@ -170,7 +175,8 @@ article{
 
 .card{
   border: 1px solid #d0d0d0;
-  background-color: #e9ecef;
+  background-color: #ffed00;
+  border-radius: 0rem;
 }
 
 .unique{
@@ -180,13 +186,13 @@ article{
 }
 
 .card-header{
-  background-color: #e9ecef;
+  background-color: #ffed00;
   border-bottom: none;
   padding: 0.75rem 0rem;
 }
 
-.card{
-  border-radius: 0rem;
+.card-body{
+  background-color: #e9ecef;
 }
 
 .btn{
@@ -370,3 +376,15 @@ textarea{
 
 
 /*---------------------------------     CSS des Forums          ------------------------------*/
+
+
+/*---------------------------------     CSS Suchfunktion im Header   -------------------------*/
+
+.suchfunktonheader{
+  background-color: #262626;
+  padding-top: 5px;
+}
+
+.hauptnavigation{
+  padding-right: 0px;
+}

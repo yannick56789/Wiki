@@ -32,12 +32,15 @@ Author:             Yannick Bach
 			</div>
 		</div> <!-- row -->
 		<div class="row main">
-			<div class="col-lg">
+			<div class="col-md-8 hauptnavigation">
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
 					<ul class="nav navbar-nav">
-				<?php foundationpress_top_bar_r(); ?> <!-- Menüstruktur von Wordpress -->
+						<?php foundationpress_top_bar_r(); ?> <!-- Menüstruktur von Wordpress -->
 					</ul>
 				</nav>
+			</div>
+			<div class="col-md-4 suchfunktonheader">
+				<?php get_search_form(); ?>
 			</div>
 		</div> <!-- row -->
 	</div> <!-- Container -->
