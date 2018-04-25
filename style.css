@@ -115,9 +115,6 @@ ul{
   text-align: center;
 }
 
-footer i{
-  padding: 2rem;
-}
 
 .footersecond{
   background-color: #262626;
@@ -142,6 +139,19 @@ footer .widget_meta a,
 footer .widget_text p{
   color: #d0d0d0;
 }
+
+.iconlink a{
+  color: #262626;
+}
+
+.iconlink a:hover{
+  color: darkgrey;
+}
+
+.iconlink i{
+  padding: 2rem;
+}
+
 /*---------------------------------     CSS des Footers    ---------------------------------*/
 
 
@@ -177,7 +187,6 @@ article{
   border: 1px solid #d0d0d0;
   background-color: #ffed00;
   border-radius: 0rem;
-  text-decoration: none;
 }
 
 .unique{
@@ -186,11 +195,23 @@ article{
   margin-top: 0.5rem;
 }
 
+.nichtkorrekt p{
+  margin-bottom: 0px;
+}
+
+
 .card-header{
   background-color: #ffed00;
   border-bottom: none;
   padding: 0.75rem 0rem;
-  text-decoration: none;
+}
+
+.card-header h2 a{
+  text-decoration: none !important;
+}
+
+.btn-link:hover{
+  color: #007bff;
 }
 
 .card-body{
@@ -260,6 +281,13 @@ textarea{
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.nichts h1,
+.nichts p{
+  float: left;
+
 }
 
 .nichtsgefunden{
@@ -268,12 +296,8 @@ textarea{
   margin-bottom: 1rem;
 }
 
-.page-content .input-group{
-  padding-left: 14rem;
-}
-
 .nichts i{
-  padding: 1rem;
+  padding: 2rem 0rem;
 }
 
 .errortitel{
@@ -372,9 +396,11 @@ textarea{
 .bbp-admin-links,
 .bbp_topic_tags,
 .bbp-form p,
-.bbp-footer{
+.bbp-footer,
+.photo{
   display: none;
 }
+
 
 #bbpress-forums li.bbp-body ul.topic{
   padding: 24px 8px !important;
@@ -382,6 +408,11 @@ textarea{
 
 #bbpress-forums{
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
+}
+
+ul.bbp-topics,
+.bbp-reply-content p{
+  font-size: 1rem !important;
 }
 
 #bbpress-forums fieldset.bbp-form{
@@ -397,6 +428,13 @@ textarea{
 .suchfunktonheader{
   background-color: #262626;
   padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0rem;
+  padding-left: 1rem;
+}
+
+.headerrechts{
+  padding-left: 0px;
 }
 
 .hauptnavigation{
