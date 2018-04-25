@@ -17,11 +17,11 @@ get_header(); ?>
 						<h1 class="errortitel">404</h1>
 						<p class="bottom">Die Seite, die Sie suchen, wurde möglicherweise entfernt oder umbennant, oder ist vorübergehend nicht verfügbar.</p>
 					</div>
-					<p><?php get_search_form(); ?></p>
+					<p><?php get_search_form(); ?></p> <!-- WordPress Suchfunktion -->
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</div> <!-- Row -->
+</div> <!-- Container -->
 
 <?php get_footer();

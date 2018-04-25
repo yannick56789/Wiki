@@ -12,29 +12,21 @@ Author:             FoundationPress
 	<header>
 		<?php
 			if ( is_single() ) {
-				the_title( '<h1 class="titel">', '</h1>' );
+				the_title( '<h1 class="titel">', '</h1>' ); // Abfrage ob der Beitrag einzeln geöffnet ist oder in einer Liste angezeigt wird //
 			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); // Den Titel der Seite mit einem Link zum selbigen Beitrag verbinden //
 			}
 		?>
 	</header>
 	<div class="entry-content">
-		<?php if (is_single() ){
+		<?php if (is_single() ){ // Abfrage ob der Beitrag einzeln geöffnet ist oder in einer Liste angezeigt wird //
 			the_content();
 		}else{
-				the_excerpt();
+				the_excerpt(); // Wird der Beitrag in einer Liste angezeigt, wird nur der Auszug ausgegeben //
 			}
 		?>
 	</div>
 	<footer>
-		<?php
-			wp_link_pages(
-				array(
-					'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
-					'after'  => '</p></nav>',
-				)
-			);
-		?>
-		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
+		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?> <!-- Verlinkung des Beitrags mit seinen Tags -->
 	</footer>
 </article>

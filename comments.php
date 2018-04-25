@@ -25,7 +25,7 @@ if ( have_comments() ) :
 				'callback'          => null,
 				'end-callback'      => null,
 				'type'              => 'all',
-				'reply_text'        => __( 'Reply', 'foundationpress' ),
+				'reply_text'        => __( 'Antworten', 'foundationpress' ), // Anpassung von Reply zu Antworten //
 				'page'              => '',
 				'per_page'          => '',
 				'avatar_size'       => 48,

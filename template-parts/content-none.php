@@ -10,33 +10,16 @@ Author:             Yannick Bach
 
 <div class="nichtsgefunden">
 <header class="page-header nichts">
-
-	<i class="fas fa-exclamation-triangle fa-9x"></i>
-	<h1 class="page-title"><?php _e( 'Oops! Nichts gefunden', 'foundationpress' ); ?></h1>
+	<i class="fas fa-exclamation-triangle fa-9x"></i> <!-- Warnungs Icon -->
+	<h1 class="page-title"><?php _e( 'Oops! Nichts gefunden', 'foundationpress' ); ?></h1> <!-- Ausgabe des Titels, wenn nichts gefunden wurde -->
 </header>
-
 <div class="page-content nichts">
-	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-
-	<p>
-		<?php
-			/* translators: %1$s: new post url */
-			printf(
-				__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'foundationpress' ),
-				admin_url( 'post-new.php' )
-			);
-		?>
-	</p>
-
-	<?php elseif ( is_search() ) : ?>
-
+	<?php if ( is_search() ) : ?> <!-- Ausgabe falls es sich um eine Suche handelt -->
 	<p><?php _e( 'Leider konnte die von Ihnen Angefragte Seite nicht gefunden werden. Vielleicht hilft ihnen eine Suche weiter.', 'foundationpress' ); ?></p>
-	<?php get_search_form(); ?>
-
-	<?php else : ?>
-
+	<?php get_search_form(); ?> <!-- WordPress Suchfunktion -->
+	<?php else : ?>  <!-- Ausgabe wenn keine Beiträge vorhanden sind -->
 	<p><?php _e( 'Leider konnte die von Ihnen Angefragte Seite nicht gefunden werden. Vielleicht hilft ihnen eine Suche weiter.', 'foundationpress' ); ?></p>
-	<?php get_search_form(); ?>
+	<?php get_search_form(); ?> <!-- WordPress Suchfunktion -->
 	<?php endif; ?>
 </div>
 </div>
