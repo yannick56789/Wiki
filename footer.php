@@ -11,19 +11,17 @@ Author:             Yannick Bach
       <div class="footerfirst">
         <div class="container">
           <div class="row main">
-            <div class="col-md-4">
-              <i class="fas fa-home fa-4x"></i>
+            <div class="col-md-4 iconlink">
+              <a href="<?php echo get_home_url(); ?>"><i class="fas fa-home fa-4x"></i></a> <!-- Verlinkt zur Startseite -->
               <p>Sie befinden sich auf dem Unternehmenswiki der Intronic AG. Hier finden Sie Anleitungen und Beiträge zum Firmenablauf.</p>
             </div>
-            <div class="col-md-4">
-              <i class="fas fa-archive fa-4x"></i>
+            <div class="col-md-4 iconlink">
+              <a href="<?php echo get_home_url(); ?>/<?php echo date("Y"); ?>"><i class="fas fa-archive fa-4x"></i></a> <!-- Verlinkt zum Archiv des aktuellen Jahres -->
               <p>Auf dieser Seite befindet sich ein Archiv aus Anleitungen die sie für den Berufsalltag der Intronic AG benutzen können.</p>
             </div>
-            <div class="col-md-4">
-              <i class="fas fa-address-book fa-4x"></i>
-              <p>Roger Wetzel: 052 644 00 86 <br>
-                 Ralph Morgenthaler: 052 644 00 83 <br>
-                 Intronic Lager: 052 644 00 81 </p>
+            <div class="col-md-4 iconlink">
+              <a href="<?php echo get_home_url(); ?>/intern/"><i class="fas fa-address-book fa-4x"></i></a> <!-- Verlinkt zur Seite "intern" -->
+              <p>Greifen Sie auf Interne Kontaktdaten zu. Private und direkte Telefonnummern stehen ihnen zur verfügung.</p>
             </div>
           </div> <!-- Row -->
         </div> <!-- Container -->
