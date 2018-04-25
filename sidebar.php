@@ -37,9 +37,12 @@ Author:             Yannick Bach
 				<p>Nicht korrekt? <?php wp_loginout(); ?></p> <!-- WordPress Ein-/Ausloggen Link -->
 			</span>
 		</div>
-
-			<div class="card-body unique">
-				<?php dynamic_sidebar( 'sidebar-widgets' ); ?> <!-- WordPress Seitennavigation -->
-			</div>
+		<div class="card-body unique">
+			<h6>Tag-Cloud</h6>
+			<?php wp_tag_cloud( $args ); ?> <!-- WordPress Tag Cloud -->
 		</div>
+		<div class="card-body unique">
+			<?php dynamic_sidebar( 'sidebar-widgets' ); ?> <!-- WordPress Seitennavigation -->
+		</div>
+	</div>
 </aside>
