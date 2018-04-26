@@ -18,7 +18,7 @@ Author:             Yannick Bach
 		      	</h2>
 		    	</div>
 				</button>
-		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 		      <div class="card-body">
 		       <?php wp_login_form(); ?> <!-- WordPress Anmeldeformular -->
 		      </div>
