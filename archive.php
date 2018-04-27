@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Das Archiv File zeigt Beiträge sortiert nach Kategorien an
-Version:            0.6
+Version:            0.9
 Author:             Yannick Bach
 */
 

@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Hier werden alle Funktionen des Themes aufgeführt
-Version:            0.5
+Version:            0.9
 Author:             Yannick Bach
 */
 

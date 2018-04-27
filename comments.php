@@ -25,7 +25,7 @@ if ( have_comments() ) :
 				'callback'          => null,
 				'end-callback'      => null,
 				'type'              => 'all',
-				'reply_text'        => __( 'Antworten', 'foundationpress' ), // Anpassung von Reply zu Antworten //
+				'reply_text'        => __( 'Antworten', 'foundationpress' ), // -----------  Anpassung von Reply zu Antworten   --------------//
 				'page'              => '',
 				'per_page'          => '',
 				'avatar_size'       => 48,
@@ -97,7 +97,7 @@ if ( comments_open() ) :
 			<?php
 				/* translators: %1$s: site url, %2$s: user identity  */
 				printf(
-					__( '<i class="fas fa-user"></i>&nbsp;&nbsp;<b><a style="color:#262626;" href="%1$s/wp-admin/profile.php">%2$s</a></b>', 'foundationpress' ), //---------------------------- Benutzeranzeige angepasst -----------------------//
+					__( '<i class="fas fa-user"></i>&nbsp;&nbsp;<b><a style="color:#262626;" href="%1$s/wp-admin/profile.php">%2$s</a></b>', 'foundationpress' ), //---------------- Benutzeranzeige angepasst -----------------------//
 					get_option( 'siteurl' ),
 					$user_identity
 				);

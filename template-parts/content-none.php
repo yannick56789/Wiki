@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Conten-none ist ein template File wenn keine Beiträge vorhanden sind.
-Version:            0.6
+Version:            0.9
 Author:             Yannick Bach
 */
 

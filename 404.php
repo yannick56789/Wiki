@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Das standart File für Fehlermeldugnen
-Version:            0.5
+Version:            0.9
 Author:             Yannick Bach
 */
 

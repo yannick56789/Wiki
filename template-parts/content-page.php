@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Content-Page ist ein bestandteil des Post Loops und gibt einzelne Seiten aus
-Version:            0.6
+Version:            0.9
 Author:             FoundationPress
 */
 

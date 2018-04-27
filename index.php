@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Das Index File bildet die Startseite der Homepage.
-Version:            0.3
+Version:            0.9
 Author:             Yannick Bach
 */
 

@@ -2,7 +2,7 @@
 /*
 Theme Name:         Wiki
 Beschreibung:       Die sidebar oder Seitennavigation wird auf jeder Seite rechts angezeigt.
-Version:            0.4
+Version:            0.9
 Author:             Yannick Bach
 */
 ?>

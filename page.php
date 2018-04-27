@@ -1,8 +1,8 @@
 <?php
 /*
 Theme Name:         Wiki
-Beschreibung:       Das standart File für Seiten
-Version:            0.5
+Beschreibung:       Das standart File für einzelne Seiten
+Version:            0.9
 Author:             Yannick Bach
 */
 
