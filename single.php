@@ -15,7 +15,7 @@ get_header(); ?>
 				<?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> <!-- Breadcrumb Navigation Funktion -->
 			</div>
 			<?php while ( have_posts() ) : the_post(); // Beginn des Post Loops // ?>
-				<?php get_template_part( 'template-parts/content', '' ); ?>
+				<?php get_template_part( 'template-parts/content-page', '' ); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; // Ende des Post Loops // ?>
 		</div>

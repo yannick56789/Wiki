@@ -21,11 +21,11 @@ get_header(); ?>
 	<div class="row main">
 		<div class="col-md-8">
 			<?php if ( have_posts() ) : // Beginn des Loops // ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'template-parts/content-page', get_post_format() ); ?>
+				<?php while ( have_posts() ) : the_post(); ?> <!-- Abfrage ob Beiträge vorhanden sind -->
+					<?php get_template_part( 'template-parts/content-page', get_post_format() ); ?> <!-- Wenn Beiträge vorhanden sind, werden diese mit dem Template content-page.php ausgegeben -->
 				<?php endwhile; ?>
-				<?php else : ?>
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php else : ?> <!-- Wenn keine Beiträge vorhanden sind -->
+					<?php get_template_part( 'template-parts/content-none' ); ?>
 				<?php endif; // Ende des Loops // ?>
 		</div>
 

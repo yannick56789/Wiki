@@ -39,7 +39,7 @@ Author:             Yannick Bach
 		</div>
 		<div class="card-body unique">
 			<h6>Tag-Cloud</h6>
-			<?php wp_tag_cloud( $args ); ?> <!-- WordPress Tag Cloud -->
+			<?php wp_tag_cloud(); ?> <!-- WordPress Tag Cloud -->
 		</div>
 		<div class="card-body unique">
 			<?php dynamic_sidebar( 'sidebar-widgets' ); ?> <!-- WordPress Seitennavigation -->
